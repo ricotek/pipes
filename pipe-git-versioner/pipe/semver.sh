@@ -5,6 +5,3 @@ dotnet new tool-manifest
 dotnet tool install GitVersion.Tool --version 5.10.3
 dotnet tool restore
 dotnet gitversion /output buildserver
-# source gitversion.properties
-# echo Building with semver $GITVERSION_MAJORMINORPATCH
-# dotnet build
