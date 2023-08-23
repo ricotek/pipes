@@ -1,0 +1,10 @@
+name: gitVersioner
+image: xxdkr.ecr.us-east-1.amazonaws.com/pipes/pipe-git-versioner:1.0.13
+description: Pipe usedto  manage a projects gitVersioner
+repository: https://bitbucket.org/vitacarerx/pipe-git-versioner
+maintainer: pka_vvege@vitacarerx.com
+tags:
+    - deployment
+    - release
+    - tag-n-bag
+  

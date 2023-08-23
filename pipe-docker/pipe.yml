@@ -1,0 +1,9 @@
+name: VPS DOCKER
+image: xxdkr.ecr.us-east-1.amazonaws.com/pipes/pipe-docker:1.0.5
+description: Pipe for running builds for docker hosted on k8s
+repository: https://bitbucket.org/vitacarerx/pipe-docker
+maintainer: rrico@vitacarerx.com
+tags:
+  - docker
+  - build
+  - k8s

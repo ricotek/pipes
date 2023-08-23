@@ -1,0 +1,9 @@
+name: VPS OCTO
+image: xxdkr.ecr.us-east-1.amazonaws.com/pipes/pipe-octo:2.0.0
+description: Pipe for running octo create-release & octo deploy-release
+repository: https://bitbucket.org/vitacarerx/pipe-octo
+maintainer: rrico@vitacarerx.com
+tags:
+  - octo
+  - create-release
+  - deploy-release

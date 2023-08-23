@@ -1,0 +1,17 @@
+<<<<<<< HEAD
+name: VPS JS UI
+image: xxdkr.ecr.us-east-1.amazonaws.com/pipes/pipe-js-ui:0.0.3
+=======
+name: pipe-js-ui
+image: xxdkr.ecr.us-east-1.amazonaws.com/pipes/pipe-js-ui:1.3.0
+>>>>>>> e037cc1225206ef0d44a9da7a1c2273829f79802
+description: Pipe for running builds for javascript based UI projects
+repository: https://bitbucket.org/vitacarerx/pipe-js-ui
+maintainer: rrico@vitacarerx.com
+tags:
+  - angular
+  - react
+  - javascript
+  - ui
+  - build
+      

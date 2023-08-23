@@ -1,0 +1,41 @@
+image:
+  name: atlassian/default-image:2
+
+test: &test
+  step:
+    name: Test
+    script:
+    - npm install -g bats
+    - chmod a+x test/*.bats
+    - bats test/test.bats
+    services:
+    - docker
+
+push: &push
+  step:
+    name: Push and Tag
+    image: python:3.7
+    caches:
+      - pip
+    script:
+    - pip3 install awscli
+    - AWSECRPASSWORD=$(aws ecr get-login-password)
+    - pipe: atlassian/bitbucket-pipe-release:5.0.1
+      variables:
+        REGISTRY_USERNAME: AWS
+        REGISTRY_PASSWORD: $AWSECRPASSWORD
+        IMAGE: xxdkr.ecr.us-east-1.amazonaws.com/pipes/$BITBUCKET_REPO_SLUG
+        REGISTRY_URL: 'https://xxdkr.ecr.us-east-1.amazonaws.com'
+        # VERSION: '0.0.3' # Optional
+        # CHANGELOG: '<boolean>' # Optional
+        # UPDATE_VERSION_IN_FILES: '<string>' # Optional
+        # GIT_PUSH: '<boolean>' # Optional
+        # GIT_USER: '<string>' # Optional
+        # SSH_KEY: '<string>' # Optional
+        # TAG: '<boolean>' # Optional
+        # WITH_DIGEST: '<boolean>' # Optional
+
+pipelines:
+  custom:
+    release:
+    - <<: *push

@@ -1,0 +1,10 @@
+name: VPS POSTMAN
+image: xxdkr.ecr.us-east-1.amazonaws.com/pipes/pipe-postman:1.2.1
+description: Pipe for running postman integration tests using newman for api projects
+repository: https://bitbucket.org/vitacarerx/pipe-postman
+maintainer: rrico@vitacarerx.com
+tags:
+  - postman
+  - test
+  - api
+  - dotnet

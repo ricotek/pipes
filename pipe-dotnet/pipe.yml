@@ -1,0 +1,8 @@
+name: VPS .NET Build
+image: xxdkr.ecr.us-east-1.amazonaws.com/pipes/pipe-dotnet:2.0.0
+description: Pipe for running builds for .NET based projects
+repository: https://bitbucket.org/vitacarerx/pipe-dotnet
+maintainer: rrico@vitacarerx.com
+tags:
+  - dotnet
+  - build

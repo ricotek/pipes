@@ -1,0 +1,9 @@
+name: VPS HELM
+image: xxdkr.ecr.us-east-1.amazonaws.com/pipes/pipe-helm:1.3.4
+description: Pipe for running helm commands
+repository: https://bitbucket.org/vitacarerx/pipe-docker
+maintainer: rrico@vitacarerx.com
+tags:
+  - helm
+  - pack
+  - k8s
